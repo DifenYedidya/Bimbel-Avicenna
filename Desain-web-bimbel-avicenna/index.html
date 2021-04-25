@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Bimbingan Belajar Avicenna</title>
+  </head>
+  <body>
+    <header id="pageHeader">
+      <a href="#" class="logo">
+        <img src="/assets/img/favicon.ico" />
+      </a>
+      <h1 id="welcome">
+        Welcome to Bimbingan <br />
+        Alvicenna's
+      </h1>
+      <section class="menuSection">
+        <ul>
+          <li>
+            <a
+              href="#home"
+              class="menuBtn"
+              onclick="return showContent('#home');"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#jadwalKursus"
+              class="menuBtn"
+              onclick="return showContent('#jadwalKursus');"
+              >Jadwal Kursus</a
+            >
+          </li>
+          <li>
+            <a
+              href="#register"
+              class="menuBtn"
+              onclick="return showContent('#register');"
+              >Register</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contactUs"
+              class="menuBtn"
+              onclick="return showContent('#contactUs');"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#login"
+              class="menuBtn"
+              onclick="return showContent('#login');"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </section>
+    </header>
+    <section id="contentSection">
+      <article id="home" class="menuContent">
+        <img src="assets/img/trusted.png" class="pic" alt="homePic" />
+        <h2>Visi misi</h2>
+        <hr>
+        <ol>
+          <li>
+            <h4>Guru yang kompeten</h4>
+            <p>Berpengalaman, Kompeten dan Disiplin</p>
+          </li>
+          <hr>
+          <li>
+            <h4>Guru ke rumah</h4>
+            <p>Anak Nyaman Dan Aman Saat Belajar Di Rumah</p>
+          </li>
+          <hr>
+          <li>
+            <h4>Semua mata pelajaran</h4>
+            <p>Semua Mata Pelajaran atau bisa memilih</p>
+          </li>
+          <hr>
+          <li>
+            <h4>Jadwal request</h4>
+            <p>Jadwal Belajar Sesuai Request Anda Dan Anak Anda</p>
+          </li>
+        </ol>
+      </article>
+      <article id="jadwalKursus" class="menuContent">
+        <img src="assets/img/team.png" class="pic" alt="ourTeam" />
+        <h2>Jadwal Kursus yang tersedia</h2>
+        <table id="tableJadwal">
+          <tr>
+            <th>No.</th>
+            <th>Mata pelajaran</th>
+            <th>Nama tutor</th>
+            <th>Biaya</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Kimia</td>
+            <td>Bambang Suyanto</td>
+            <td>Rp. 300.000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Fisika</td>
+            <td>Siti Setiawati</td>
+            <td>Rp. 250.000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Matematika</td>
+            <td>Suci Darmawan</td>
+            <td>Rp. 400.000</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Bahasa</td>
+            <td>Tedi Aryansyah</td>
+            <td>Rp. 300.000</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Kimia</td>
+            <td>Suryajana Kumolo</td>
+            <td>Rp. 400.000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Fisika</td>
+            <td>Mukti Astuti</td>
+            <td>Rp. 350.000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Matematika</td>
+            <td>Sugiyono Ali</td>
+            <td>Rp. 400.000</td>
+          </tr>
+        </table>
+      </article>
+      <article id="register" class="menuContent">
+        <h2>Mari bergabung!</h2>
+        <label for="idPeserta">Id Peserta</label>
+        <input
+          type="text"
+          id="idPeserta"
+          name="idPeserta"
+          placeholder="Masukan id peserta.."
+        />
+        <hr />
+        <label for="nama">Nama</label>
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="Masukan nama anda.."
+        />
+        <hr />
+        <label for="Kelas">Kelas</label>
+        <input
+          type="text"
+          id="Kelas"
+          name="Kelas"
+          placeholder="Kelas yang ingin diambil.."
+        />
+        <hr />
+        <label for="Jurusan">Jurusan</label>
+        <input
+          type="text"
+          id="Jurusan"
+          name="Jurusan"
+          placeholder="Masukan jurusan anda.."
+        />
+        <hr />
+        <label for="asalSma">Asal SMA</label>
+        <input
+          type="text"
+          id="asalSma"
+          name="asalSma"
+          placeholder="Masukan asal SMA.."
+        />
+        <hr />
+        <label for="email">Email</label>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="email"
+          id="email"
+          required
+        />
+        <hr />
+        <label for="psw">Password</label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          id="psw"
+          required
+        />
+        <hr />
+        <button type="submit" class="registerbtn">Register</button>
+      </article>
+      <article id="contactUs" class="menuContent">
+        <img src="assets/img/contact.png" class="pic" alt="contactUs" />
+        <h2>Kontak kami</h2>
+        <ul>
+          <li>
+            <h5>Alamat:</h5>
+            <p>
+              Jl. Kebayoran lama No 1 RT 11 RW 12 <br />
+              Kebon Jeruk Jakarta
+            </p>
+          </li>
+          <li>
+            <h5>No Whatsapp:</h5>
+            <p>08123-123-3222</p>
+          </li>
+          <li>
+            <h5>No telepon:</h5>
+            <p>(021) 453-2998</p>
+          </li>
+        </ul>
+      </article>
+      <article id="login" class="menuContent">
+        <h2>
+          Sudah punya akun? <br />
+          Login
+        </h2>
+        <label for="email">Email</label>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="email"
+          id="email"
+          required
+        />
+        <hr />
+        <label for="psw">Password</label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          id="psw"
+          required
+        />
+        <hr />
+        <button type="submit" class="registerbtn">Login</button>
+      </article>
+      <article id="kimia" class="menuContent">
+        <h2>Apa itu <u>Kimia</u>?</h2>
+        <img src="assets/img/materi/kimia.jpg" class="pic" alt="kimiaPic" />
+        <hr>
+        <p>
+          Kimia merupakan ilmu tentang materi, sifatnya, strukturnya,
+          perubahan/reaksinya serta energi yang menyertai perubahan tersebut.
+          Kimia secara khusus dibagi menjadi beberapa bidang utama, yaitu: kimia
+          analisis, kimia organik, kimia anorganik, kimia fisik, dan biokimia.
+          <hr>
+          Kimia mengkaji sifat zat, dan secara khusus mempelajari reaksi yang
+          mentransformasi satu zat menjadi zat lain. Kimia menyediakan pedoman
+          untuk menyesuaikan sifat-sifat zat yang ada agar dapat memenuhi
+          beberapa kebutuhan atau penerapan khusus dan menciptakan bahan yang
+          benar-benar baru yang dirancang sejak awal agar memiliki sifat
+          tertentu yang diinginkan. Melalui semua keberhasilan itu, kimia telah
+          memberi andil yang luar biasa dalam perbaikan produk pertanian,
+          pengendalian penyebaran penyakit, peningkatan produksi energi, dan
+          penurunan pencemaran lingkungan.
+          <hr>
+          Bahan-bahan kimia sangat mempengaruhi
+          kehidupan kita, maka ilmu kimia sudah pasti menjadi salah satu bidang
+          paling berjaya yang amat penting hingga saat ini. Tanpa disadari,
+          bahan kimia telah digunakan secara luas dalam kehidupan sehari-hari.
+          Kegunaan bahan kimia akan terus meningkat dan manusia akan sentiasa
+          memerlukan bahan baru. Dalam hal inilah, ilmu kimia memainkan peranan
+          strategis dan krusial untuk pengembangan kualitas hidup manusia.
+        </p>
+      </article>
+      <article id="fisika" class="menuContent">
+        <h2>Apa itu <u>Fisika</u>?</h2>
+        <img src="assets/img/materi/fisika.jpeg" class="pic" alt="fisikaPic" />
+        <hr>
+        <p>
+          Fisika merupakan salah satu mata pelajaran jurusan IPA yang terbilang sulit dipahami dan sangat membosankan. Namun pelajaran fisika juga bisa menjadi keahlian kita ketika kita bisa belajar dengan sungguh-sungguh. Pengertian fisika yaitu berasal dari kata “physic” yang artinya yaitu alam. Jadi ilmu fisika yaitu sebuah ilmu pengetahuan dimana didalamnya mempelajari tentang sifat dan fenomena alam atau gejala alam dan seluruh interaksi yang terjadi didalamnya. Untuk mempelajari fenomena atau gejala alam, fisika menggunakan proses dimulai dari pengamatan, pengukuran, analisis dan menarik kesimpulan. Sehingga prosesnya lama dan berbuntut panjang, namun hasilnya bisa dipastikan akurat karena fisika termasuk ilmu eksak yang kebenarannya terbukti.
+          <hr>
+          Tujuan mempelajari ilmu fisika yaitu agar kita dapat mengetahui bagian dasar dari benda dan mengerti interaksi antar benda-benda, serta mampu untuk menjelaskan mengenai fenomena alam yang terjadi. Dari beberapa pengertian fisika menurut para ahli, maka dapat dikatakan bahwa konsep-konsep dasar fisika tidak hanya mendukung perkembangan ilmu fisika saja, namun juga mendukung perkembangan ilmu lain dan teknologi. Ilmu fisika menunjang riset murni dan terapan. Beberapa ahli geologi dalam risetnya menggunakan metode gravimetric, akustik, listrik dan mekanika. Selain itu peralatan modern di rumah sakit juga menerapkan ilmu fisika. Ahli astronomi juga membutuhkan ilmu fisika, begitu pula dengan ahli meteorology, oseanologi dan sesmologi.
+          <hr>
+          Di zaman modern sekarang ini ilmu fisika tentu dapat diterapkan di berbagai bidang yang ada di dunia. Bahkan, ilmu kedokteran pun dapat menggunakan ilmu fisika sebagai dasar pengetahuan dan dasar bertindak. Contohnya, bagaimana pesawat data tertahan di udara? Bagaimana siaran Tv dapat dilihat dan dinikmati di wilayah yang jauh? Pertanyaan-pertanyaan seperti itu dapat dijawab oleh fisika dengan rumus-rumus yang bisa membantu manusia mengambil kesimpulan tentang fenomena alam yang terjadi. Ilmu fisika terbagi menjadi dua, yaitu fisika modern dan fisika klasik. Fisika modern muncul setelah penemuan Albert Einstein mengenai atom dan sebagainya. Sementara itu, fisika klasik merujuk pada bunyi, gerak dan lain-lain.
+        </p>
+      </article>
+      <article id="matematika" class="menuContent">
+        <h2>Apa itu <u>matematika</u>?</h2>
+        <img src="assets/img/materi/matematika.png" class="pic" alt="matPic" />
+        <hr>
+        <p>
+          Secara bahasa Matematika (Indonesia) mathematics (Inggris), athematik (Jerman), mathematique (Perancis), matematico (Itali), matematiceski (Rusia),mathematick atau wiskunde (Belanda) berasal dari bahasa Yunani : mathematikos yaitu ilmu pasti, dari kata mathema atau mathesis yang berarti ajaran, pengetahuan, atau ilmu pengetahuan.Matematika (dari bahasa Yunani: µa??µat??? - mathematiká) adalah studi besaran, struktur, ruang, dan perubahan. Para matematikawan mencari berbagai pola, merumuskan konjektur baru, dan membangun kebenaran melalui metode deduksi yang kaku dari aksioma-aksioma dan definisi-definisi yang bersesuaian.
+          <hr>
+          <ol>
+            <li>
+              <h5>Artimatika</h5>
+              <p>Cabang matematika ini sering kita gunakan dalam kehidupan sehari-hari bahkan orang yang tidak suka matematika. merupakan cabang yang mempelajari operasi dasar bilangan. seperti penjumlahan, pengurangan, perkalian, pembagian, persen, pemangkatan dsb. contoh dalam kehidupan sehari - hari menghitung uang, laba, rugi, bunga bank.
+                Semua hal tentang tambah, kurang, kali, bagi. Cabang Matematika yang paling sering digunakan dalam hidup ini, bahkan oleh orang yang tidak suka Matematika sekalipun 
+                </p>
+            </li>
+            <hr>
+            <li>
+              <h5>Geometri</h5>
+              <p>
+                Geometri (dari bahasa yunani ?e?µet??a; geo = bumi, metria = pengukuran) secara harafiah berarti pengukuran tentang bumcabang matematika membahas tentang bidang, bentuk, ruang, volume, luas. cabang ini banyak di kuasai oleh para insinyur, arsitek
+                Ilmu yang membahas bentuk, bidang, dan ruang suatu benda (terutama luas dan volume). Insinyur dan arsitek yang kompeten pasti menguasai cabang Matematika ini. Bahkan kini geometri sangat diperlukan untuk ilmu desain grafis dan komputer.
+              </p>
+            </li>
+            <hr>
+            <li>
+              <h5>Aljabar</h5>
+              <p>
+                Aljabar berasal dari Bahasa Arab "al-jabr" yang berarti "pertemuan", "hubungan" atau "penyelesaian" adalah cabang matematika yang dapat dicirikan sebagai generalisasi dari bidang aritmatika. Aljabar juga merupakan nama sebuah struktur aljabar abstrak, yaitu aljabar dalam sebuah bidang. Bentuk-Bentuk seperti 2a , -5b, x3, 3p + 2q disebut bentuk aljabar.Pada bentuk aljabar 2a, 2 disebut koefisien, sedangkan a disebut variable (peubah).
+                Manipulasi operasi arimatika untuk mencari suatu nilai yang tidak diketahui (biasanya dinyatakan dalam variabel x dan y). Ahli komputer dan programming termasuk mereka yang wajib menguasai aljabar. Bahkan ketika kecil, Einstein mulai belajar matematika dari Aljabar ini.
+               </p>
+            </li>
+            <hr>
+            <li>
+              <h5>Trigonometri</h5>
+              <p>
+                Secara bahasa trigon berarti tiga sudut, metri berarti mengukur, cabang ini membahas tentang sudut segitiga dan fungsi trigometri seperti sinus, cosinus, tangen. contoh dalam kehidupan sehari - hari sistem navigasi satelit, menghitung tinggi pohon (Pramuka).
+                Cabang matematika yang didedikasikan untuk mempelajari semua properti pada segitiga (terutama sudut dan sisi) beserta manipulasinya. Trigonometri juga harus dikuasai oleh para insinyur dan arsitek. Cabang ilmu ini katanya adalah salah satu yang paling sulit dipelajari disekolahan saat ini. Padahal manfaatnya sangatlah besar bagi kehidupan manusia.                
+              </p>
+            </li>
+            <hr>
+            <li>
+              <h5>Kalkulus</h5>
+              <p>
+                Secara bahasa calculus ( bahasa latin) artinya batu kecil untuk menghitung. cabang ilmu matematika yang mencakup limit, turunan, integral, dan deret takterhingga. Kalkulus adalah ilmu mengenai perubahan, sebagaimana geometri adalah ilmu mengenai bentuk dan aljabar adalah ilmu mengenai pengerjaan untuk memecahkan persamaan serta aplikasinya. Kalkulus memiliki aplikasi yang luas dalam bidang-bidang sains, ekonomi, dan teknik; serta dapat memecahkan berbagai masalah yang tidak dapat dipecahkan dengan aljabar elementer. contoh dalam kehidupan sehari-hari kecepatan sesaat, percepatan sesaat.
+                Insinyur & ilmuwan wajib menguasai ini dalam belajar matematika. Ilmu kalkulus mempelajari laju perubahan sesuatu, penjumlahan sesuatu yang banyak sekali menuju suatu nilai pasti, sampai pendekatan yang luar-biasa akurat untuk menghitung sesuatu yang "nyaris" mustahil dipecahkan untuk dihitung menggunakan operasi matematika biasa.
+              </p>
+            </li>
+            <hr>
+            <li>
+              <h5>Statistik</h5>
+              <p>
+                Cabang ilmu ini mempelajari tentang teknik pengumpulan, pengolahan dan penyajian data. Ilmu ini sangat bermanfaat dalam melakukan penelitian yang melibatkan angka. Bahkan jadi politisi jaman sekarang punperlu belajar dasar ilmu statistik untuk tahu peluang menang dalam pemilihan. Biasanya statistik selalu dikaitkan dengan ilmu hitung peluang.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </article>
+      <article id="bahasa" class="menuContent">
+        <h2>Bebahasa <u>indonesia</u> yang baik</h2>
+        <img src="assets/img/materi/bahasa.jpg" class="pic" alt="bahasaPic" />
+        <hr>
+        <p>
+          Tahun 2019, Presiden menerbitkan Peraturan Presiden nomor 63 tahun 2019 tentang 
+          Penggunaan Bahasa Indonesia. Apa kiranya yang diatur dan apa imbasnya kepada komunikasi 
+          kita dalam kehidupan sehari-hari? Inti peraturan tersebut ada pada Bab II, Bagian 1, 
+          Pasal 2, tentang “Ketentuan Penggunaan Bahasa Indonesia”. Dicantumkan dalam Bab II, 
+          Bagian 1, bahwa “Penggunaan Bahasa Indonesia harus memenuhi kriteria Bahasa Indonesia yang 
+          baik dan benar”. Berikut akan dibahas kriteria bahasa Indonesia yang baik dan benar.
+          <hr>
+          Berbahasa Indonesia yang baik berarti bahwa kita harus menggunakan bahasa Indonesia 
+          sesuai dengan konteks berbahasa yang selaras dengan nilai sosial masyarakat. Peraturan ini 
+          berkaitan penggunaan ragam bahasa secara tulis dan lisan untuk kebutuhan berkomunikasi. 
+          Ragam bahasa dari sisi penggunaan bahasa ada dua, yaitu ragam formal dan ragam nonformal. 
+          Ada dua hal yang kita perhatikan dalam kalimat ini. Pertama, berbahasa sesuai dengan 
+          konteksnya dan, kedua, berbahasa selaras dengan nilai sosial masyarakat. Hal itu yang menjadi 
+          alasan mengapa Kurikulum 2013 menggunakan pendekatan berbasis teks dalam pengajaran berbahasa, 
+          baik bahasa Indonesia maupun bahasa lainnya. Bahasa diperkenalkan kepada siswa dalam konteksnya 
+          dan tidak sebagai satuan-satuan kata yang berdiri sendiri. Dengan demikian, siswa dihadapkan 
+          dengan konsep-konsep bahasa sejak awal. Misalnya, perbedaan penggunaan kata cuma dan hanya. 
+          Adapun, bahasa Indonesia yang baik berkaitan dengan nilai sosial masyarakat. Artinya, pada saat 
+          menggunakan bahasa, wajib diperhatikan kepada siapakah kita berkomunikasi. Berkomunikasi dengan 
+          teman tentu akan berbeda dengan berkomunikasi dengan orang tua. Kata aku digunakan kepada teman-teman 
+          dan kata saya digunakan kepada orang yang lebih tua atau yang dihormati. Dalam hal ini, kesantunan 
+          berbahasa mulai diajarkan.
+          <hr>
+          Lalu, apakah itu berarti bahwa kita harus selalu berbahasa ragam formal? Pada saat kita berbicara 
+          dengan tukang sayur atau kepada teman, kita tentu tidak perlu menggunakan ragam formal. 
+          Permasalahannya adalah apakah pada saat berbahasa ragam nonformal, kita harus tetap mengindahkan 
+          kaidah berbahasa? Jawabannya adalah ya! Menggunakan kaidah dalam ragam nonformal berarti menggunakan 
+          pilihan kata yang sesuai dan tepat serta menggunakan kaidah tata bahasa yang benar. Misalnya, pada saat 
+          membeli bakso, jangan mengatakan, “*Bang, saya bakso pake bihun.” Kalimat itu bukan kalimat yang benar. 
+          Saya bukan bakso, saya orang. Untuk menjadi kalimat yang baik dan benar, hanya dibutuhkan satu kata, yaitu 
+          “mau” menjadi “Bang, saya mau bakso pake bihun.”   
+          <hr>
+          Jadi, berbahasa Indonesia yang baik dan benar berarti menyampaikan pikiran dengan informasi yang 
+          lengkap secara teratur. Ragam bahasa yang digunakan dapat berupa ragam bahasa formal atau nonformal, 
+          bergantung pada konteksnya. 
+        </p>
+      </article>
+    </section>
+    <nav id="mainNav">
+      <ul>
+        <h3>Materi:</h3>
+        <hr>
+        <li>
+          <a
+            href="#kimia"
+            class="menuBtn"
+            onclick="return showContent('#kimia');"
+            >Kimia</a
+          >
+        </li>
+        <li>
+          <a
+            href="#fisika"
+            class="menuBtn"
+            onclick="return showContent('#fisika');"
+            >Fisika</a
+          >
+        </li>
+        <li>
+          <a
+            href="#matematika"
+            class="menuBtn"
+            onclick="return showContent('#matematika');"
+            >Matematika</a
+          >
+        </li>
+        <li>
+          <a
+            href="#bahasa"
+            class="menuBtn"
+            onclick="return showContent('#bahasa');"
+            >Bahasa</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <footer id="pageFooter">
+      <h5>Nim: 2301850903 <br />Nama: Reynalda budiawan</h5>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>

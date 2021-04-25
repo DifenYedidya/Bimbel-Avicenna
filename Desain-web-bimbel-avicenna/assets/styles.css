@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav contentSec contentSec"
+    "footer footer footer";
+  grid-template-rows: 4% 3fr 2%;
+  grid-template-columns: 20% 1fr;
+  grid-gap: 10px;
+  min-height: 200vh;
+  margin: 0;
+  background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+}
+footer,
+section,
+nav,
+div {
+  padding: 20px;
+}
+
+hr {
+  visibility: hidden;
+}
+
+#pageHeader {
+  grid-area: header;
+  position: fixed;
+  overflow: hidden;
+  background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 20px 100px;
+  z-index: 9999;
+}
+
+#pageHeader .logo img {
+  position: relative;
+  width: 120px;
+  transition: 0.6s;
+}
+
+#pageHeader h1 {
+  position: relative;
+  font-weight: 900px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: 0.6s;
+}
+
+#pageHeader .menuSection ul {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+#pageHeader .menuSection ul li {
+  position: relative;
+  list-style: none;
+}
+
+#pageHeader .menuSection ul li a {
+  position: relative;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+#pageHeader .menuSection ul li a:hover {
+  color: chartreuse;
+}
+#contentSection {
+  grid-area: contentSec;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  margin-top: 100px;
+  padding-left: 30pt;
+  padding-right: 30pt;
+}
+
+.menuContent {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.pic {
+  float: right;
+  margin: 20px;
+  width: 300px;
+}
+
+.menuContent h2 {
+  position: relative;
+  font-weight: 700px;
+  color: #007bff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+.menuContent h4 {
+  position: relative;
+  font-weight: 200px;
+  color: #007bff;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+.menuContent h5 {
+  position: relative;
+  font-weight: 100px;
+  color: #007bff;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+.menuContent ul {
+  position: relative;
+  list-style: none;
+  padding: 20px;
+}
+
+.menuContent li,
+p {
+  padding-bottom: 8px;
+}
+
+.menuContent label,
+input {
+  display: flex;
+  align-items: flex-start;
+}
+
+#tableJadwal table {
+  width: 100%;
+}
+
+#tableJadwal table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+#tableJadwal th,
+td {
+  padding: 20px;
+  text-align: left;
+}
+
+#tableJadwal tr:nth-child(even) {
+  background-color: #eee;
+}
+
+#tableJadwal th {
+  background-color: #f9f586;
+  color: #007bff;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 50px 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+#login h2 {
+  padding-bottom: 20px;
+}
+
+#mainNav {
+  grid-area: nav;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+
+#mainNav h3 {
+  position: relative;
+  color: #007bff;
+  letter-spacing: 2px;
+  font-weight: 600px;
+}
+
+#mainNav ul li {
+  position: relative;
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 20;
+}
+
+#mainNav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #007bff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+#pageFooter {
+  grid-area: footer;
+  position: relative;
+  padding: 20px;
+  font-weight: 400px;
+  color: #007bff;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
