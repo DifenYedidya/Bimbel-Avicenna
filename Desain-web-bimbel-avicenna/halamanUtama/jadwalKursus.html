@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Bimbingan Belajar Avicenna</title>
+  </head>
+  <body>
+    <header id="pageHeader">
+      <a href="#" class="logo">
+        <img src="../assets/img/favicon.ico" />
+      </a>
+      <h1 id="welcome">
+        Welcome to Bimbingan <br />
+        Alvicenna's
+      </h1>
+      <section class="menuSection">
+        <ul>
+          <li>
+            <a
+              href="home.html"
+              class="menuBtn"
+              onclick="return showContent('#home');"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="jadwalKursus.html"
+              class="menuBtn"
+              onclick="return showContent('#jadwalKursus');"
+              >Jadwal Kursus</a
+            >
+          </li>
+          <li>
+            <a
+              href="register.html"
+              class="menuBtn"
+              onclick="return showContent('#register');"
+              >Register</a
+            >
+          </li>
+          <li>
+            <a
+              href="contactUs.html"
+              class="menuBtn"
+              onclick="return showContent('#contactUs');"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="login.html"
+              class="menuBtn"
+              onclick="return showContent('#login');"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </section>
+    </header>
+    <section id="contentSection">
+      <article id="jadwalKursus" class="menuContent">
+        <img src="../assets/img/team.png" class="pic" alt="ourTeam" />
+        <h2>Jadwal Kursus yang tersedia</h2>
+        <table id="tableJadwal">
+          <tr>
+            <th>No.</th>
+            <th>Mata pelajaran</th>
+            <th>Nama tutor</th>
+            <th>Biaya</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Kimia</td>
+            <td>Bambang Suyanto</td>
+            <td>Rp. 300.000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Fisika</td>
+            <td>Siti Setiawati</td>
+            <td>Rp. 250.000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Matematika</td>
+            <td>Suci Darmawan</td>
+            <td>Rp. 400.000</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Bahasa Inggris</td>
+            <td>Tedi Aryansyah</td>
+            <td>Rp. 300.000</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Kimia</td>
+            <td>Suryajana Kumolo</td>
+            <td>Rp. 400.000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Fisika</td>
+            <td>Mukti Astuti</td>
+            <td>Rp. 350.000</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Matematika</td>
+            <td>Sugiyono Ali</td>
+            <td>Rp. 400.000</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+    <nav id="mainNav">
+      <ul>
+        <h3>Materi:</h3>
+        <hr />
+        <li>
+          <a
+            href="../navigation/kimia.html"
+            class="menuBtn"
+            onclick="return showContent('#kimia');"
+            >Kimia</a
+          >
+        </li>
+        <li>
+          <a
+            href="../navigation/fisika.html"
+            class="menuBtn"
+            onclick="return showContent('#fisika');"
+            >Fisika</a
+          >
+        </li>
+        <li>
+          <a
+            href="../navigation/matematika.html"
+            class="menuBtn"
+            onclick="return showContent('#matematika');"
+            >Matematika</a
+          >
+        </li>
+        <li>
+          <a
+            href="../navigation/bahasaInggris.html"
+            class="menuBtn"
+            onclick="return showContent('#bahasa');"
+            >Bahasa</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <footer id="pageFooter">
+      <h5>Nim: 2301850903 <br />Nama: Reynalda budiawan</h5>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYG  SHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script/script.js"></script>
+  </body>
+</html>
